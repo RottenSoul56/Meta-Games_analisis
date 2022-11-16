@@ -8,7 +8,7 @@ from requests import get
 
 pages = np.arange(0, 199,
                   1)
-
+#initialize empty lists to store the variables scraped
 titles = []
 years = []
 ratings = []
@@ -19,18 +19,17 @@ userAgent = {'User-agent': 'Mozilla/5.0'}
 
 for page in pages:
 
-    # get request for
+    # get request for games
     response = get("https://www.metacritic.com/browse/games/score/metascore/all/all/filtered?"
                    + "page="
                    + str(page),
                    headers=userAgent)
 
     sleep(randint(5, 10))
-
+    # parse the content of current iteration of response
     page_html = BeautifulSoup(response.text, 'html.parser')
-
     movie_containers = page_html.find_all('td', class_="clamp-summary-wrap")
-
+    # extract the 100 games for that page
     for container in movie_containers:
         # conditional for all with metascore
         if container.find('a', class_="title") is not None:
