@@ -25,3 +25,8 @@ platform: Platform this game was released OR highest rated version of a game
 
 ![№of games per year without duplic by year](https://user-images.githubusercontent.com/45687211/202182815-9d13950d-e00d-4923-b30b-dcb69d3923bb.png)
 ![№of games with duolic by year](https://user-images.githubusercontent.com/45687211/202182828-0ce8a17b-5f64-4eef-8526-f00a261d07b8.png)
+
+# Two graph:Average score by Metacritic and User 
+![Avg meta by year](https://user-images.githubusercontent.com/45687211/203310937-eac8d6de-bedf-466c-ab6d-36cb66a090cd.png)
+![Avg user by year](https://user-images.githubusercontent.com/45687211/203310956-91a09f47-60b4-45b5-84ac-a2cf8844ae3e.png)
+## Both grahps have higher average till year 2000, but metacritic slightly higher in recent years then user score 
